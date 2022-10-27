@@ -1,5 +1,6 @@
 public abstract class ACar implements Car {
    private String registrationNumber;
+
    private String make;
    private  String model;
    private int NumberOfDoors;
@@ -17,6 +18,7 @@ public abstract class ACar implements Car {
     }
 
     public int getNumberOfDoors() {
+
         return NumberOfDoors;
     }
 }

@@ -4,6 +4,7 @@ public class FleetOfCars {
     ArrayList<Car> fleet = new ArrayList<>();
 
     public void addCar(Car car) {
+
         fleet.add(car);
     }
 

@@ -1,11 +1,35 @@
 public class GasolineCar extends AFuelCar{
     @Override
     public String getFuelType() {
+
         return null;
     }
 
-    @Override
+
+
     public int getRegistrationFee() {
-        return 0;
+
+        int kmPrLitre = getKmPrLitre();
+        int fee = 0;
+
+        if(kmPrLitre < 5){
+            fee = 10470;
+        }
+        if(kmPrLitre >= 5 && kmPrLitre <= 10){
+            fee = 5500;
+        }
+        if(kmPrLitre >= 10 && kmPrLitre <= 15){
+            fee = 2340;
+        }
+        if(kmPrLitre >= 15 && kmPrLitre <= 20){
+            fee = 1050;
+        }
+        if(kmPrLitre >= 20 && kmPrLitre <= 50){
+            fee = 330;
+        }
+
+        return fee;
+
     }
+
 }
