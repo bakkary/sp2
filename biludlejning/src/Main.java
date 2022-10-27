@@ -2,10 +2,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        FleetOfCars test = new FleetOfCars();
-        System.out.println(test);
+        Car c1 = new DieselCar("qk9002", "Kia", "Picanto", 4, 100, false);
 
-
+        System.out.println(c1);
+    }
 
     }
-}

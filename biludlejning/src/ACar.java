@@ -3,7 +3,17 @@ public abstract class ACar implements Car {
 
    private String make;
    private  String model;
-   private int NumberOfDoors;
+   private int numberOfDoors;
+
+
+
+
+    public ACar(String registrationNumber, String make, String model, int numberOfDoors) {
+        this.registrationNumber = registrationNumber;
+        this.make = make;
+        this.model = model;
+        this.numberOfDoors = numberOfDoors;
+    }
 
     public String getRegistrationNumber() {
         return registrationNumber;
@@ -19,6 +29,8 @@ public abstract class ACar implements Car {
 
     public int getNumberOfDoors() {
 
-        return NumberOfDoors;
+        return numberOfDoors;
     }
 }
+
+

@@ -1,4 +1,8 @@
 public class GasolineCar extends AFuelCar{
+    public GasolineCar(String registrationNumber, String make, String model, int numberOfDoors, int kmPrLitre) {
+        super(registrationNumber, make, model, numberOfDoors, kmPrLitre);
+    }
+
     @Override
     public String getFuelType() {
 
